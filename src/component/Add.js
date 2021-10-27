@@ -4,10 +4,6 @@ import { Button, Modal } from 'react-bootstrap'
 function Add({ Addm }) {
     const [show, setShow] = useState(false);
     const [addmovie, setAddmovie] = useState([{
-        posterUrl: "https://i.pinimg.com/originals/aa/15/42/aa15422cb191838cd1b4737c7325d1fc.jpg",
-            title: "Vikings",
-            description: "This gritty drama charts the exploits of Viking hero Ragnar Lothbrok as he extends the Norse reach by challenging an unfit leader who lacks vision..",
-            rate: 2
         }])
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
@@ -23,7 +19,7 @@ function Add({ Addm }) {
             </Button>
 
             <Modal show={show} onHide={handleClose}>
-                <Modal.Header closeButton>
+                <Modal.Header >
                     <Modal.Title>Add your film discreption</Modal.Title>
                 </Modal.Header>
                 <Modal.Body style={{ display: 'flex', flexDirection: 'column' }} >

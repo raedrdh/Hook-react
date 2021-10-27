@@ -75,7 +75,7 @@ const MovieList = () => {
         <div>
             <Filter filtertext={filtertext} filterrate={filterrate} />
             <div style={{ display: 'flex', justifyContent: 'space-around', flexWrap: "wrap" }} className="adc">
-                {films.filter((el) => (el.title.toLowerCase().includes(text.toLowerCase()) && el.rate.toString() >= rate)).map((element) =>
+                {films.filter((el) => (el.rate.toString() >= rate && el.title.toLowerCase().includes(text.toLowerCase()) )).map((element) =>
                     <MovieCard movie={element} />
                 )}
             </div>

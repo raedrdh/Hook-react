@@ -17,8 +17,7 @@ const MovieCard = ({movie}) => {
     <ReactStars
     count={10}
     value={movie.rate}
-    //onChange={ratingChanged}
-    size={24}
+    size={30}
     edit={false}
     activeColor="#150E56"/>
     

@@ -11,7 +11,7 @@ const SearchText = ({ filtertext, filterrate }) => {
       }}
     >
       <h1 style={{ color: "red", fontSize: "80px" }} className="titre">
-        <span style={{ color: "blue" }}>Searsh list</span>Card
+        <span style={{ color: "blue" }}>Searsh list </span>Card
       </h1>
       <div style={{ display: "flex" }}>
         <div style={{display : 'flex', flexDirection :'column', justifyItems:'flex-start'}}>
